@@ -390,6 +390,10 @@ body {
   line-height: 18px;
 }
 
+.logo {
+  width: 177px;
+}
+
 .search {
   display: flex;
   position: relative;
