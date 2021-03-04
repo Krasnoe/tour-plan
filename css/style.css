@@ -528,4 +528,10 @@ img {
     max-width: 99px;
   }
 }
+
+@media (max-width: 320px) {
+  .container {
+    width: 280px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
