@@ -382,7 +382,7 @@ body {
   height: 100%;
   padding-left: 23px;
   padding-right: 75px;
-  background-color: #f5fafe;
+  background-color: #F5FAFE;
   border: none;
   outline: none;
   font-size: 12px;
@@ -394,6 +394,10 @@ body {
   outline: none;
 }
 
+.search__input:hover {
+  cursor: pointer;
+}
+
 .search__button {
   position: absolute;
   top: 0;
@@ -401,7 +405,7 @@ body {
   width: 65px;
   height: 100%;
   border: none;
-  background-color: #ec1f46;
+  background-color: #EC1F46;
 }
 
 .user {
