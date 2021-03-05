@@ -27,8 +27,11 @@
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
+      font-weight: bold
 .logo
   width: 177px
+  &__image
+    padding-top: 2px
 .search
   display: flex
   position: relative
@@ -41,6 +44,7 @@
     height: 100%
     padding-left: 23px
     padding-right: 75px
+    padding-bottom: 3px
     background-color: #F5FAFE
     border: none
     outline: none
@@ -53,12 +57,16 @@
       cursor: pointer
   &__button
     position: absolute
+    padding: 0
     top: 0
     right: 0
     width: 65px
     height: 100%
     border: none
     background-color: $primery
+    &-img
+      margin: 12px 24px 12px 25px
+
 .user
   display: flex
   align-items: center
@@ -68,8 +76,10 @@
     height: 40px
     border-radius: 50%
     object-fit: cover
+    padding-top: 0
   &__name
     margin-left: 18px
+    padding-top: 1px
     font-size: 14px
     line-height: 18px
     color: $text-color
