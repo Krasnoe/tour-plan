@@ -775,11 +775,20 @@ img {
   height: 213px;
   background-color: #000;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
+  }
+  .swiper-slide__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -808,8 +817,24 @@ img {
   .search__input {
     width: 340px;
   }
+  .hotel-grid {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .hotel-right {
+    flex-direction: row;
+  }
+  .booking {
+    width: 340px;
+  }
   .slider {
-    width: 700px;
+    width: 100%;
+  }
+  .map {
+    width: 340px;
   }
 }
 
@@ -866,6 +891,21 @@ img {
   }
   .slider-button--prev {
     left: 17px;
+  }
+  .slider {
+    height: 450px;
+  }
+  .hotel-right {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .booking {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .map {
+    width: 100%;
+    margin-bottom: 60px;
   }
 }
 
