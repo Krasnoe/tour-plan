@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=42358930-c531-4e3b-9037-6d2d08359695&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init() {
+        var myMap = new ymaps.Map("map", {
+          center: [7.573638, 79.803867],
+          zoom: 7
+        });
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
@@ -143,19 +156,39 @@
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img class="swiper-slide__image" src="img/slide-1.jpg" alt="slide-1" />
+                  <img
+                    class="swiper-slide__image"
+                    src="img/slide-1.jpg"
+                    alt="slide-1"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-slide__image" src="img/slide-2.jpg" alt="slide-2" />
+                  <img
+                    class="swiper-slide__image"
+                    src="img/slide-2.jpg"
+                    alt="slide-2"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-slide__image" src="img/slide-3.jpg" alt="slide-3" />
+                  <img
+                    class="swiper-slide__image"
+                    src="img/slide-3.jpg"
+                    alt="slide-3"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-slide__image" src="img/slide-4.jpg" alt="slide-4" />
+                  <img
+                    class="swiper-slide__image"
+                    src="img/slide-4.jpg"
+                    alt="slide-4"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-slide__image" src="img/slide-5.jpg" alt="slide-5" />
+                  <img
+                    class="swiper-slide__image"
+                    src="img/slide-5.jpg"
+                    alt="slide-5"
+                  />
                 </div>
               </div>
               <!-- If we need navigation buttons -->
@@ -176,11 +209,19 @@
                 <!-- /.booking__price -->
                 <div class="booking__room">
                   <div class="booking__text">
-                    <img src="img/user.svg" alt="Icon: user" class="booking__icon-user" />
+                    <img
+                      src="img/user.svg"
+                      alt="Icon: user"
+                      class="booking__icon-user"
+                    />
                     <span class="booking__description">2 x Guests</span>
                   </div>
                   <div class="booking__text">
-                    <img src="img/home.svg" alt="Icon: home" class="booking__icon" />
+                    <img
+                      src="img/home.svg"
+                      alt="Icon: home"
+                      class="booking__icon"
+                    />
                     <span class="booking__description">1 x Room</span>
                   </div>
                 </div>
@@ -198,7 +239,7 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map"></div>
+            <div class="map" id="map"></div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
