@@ -671,7 +671,7 @@ img {
   border-radius: 8px;
   width: 350px;
   min-height: 210px;
-  padding: 28px;
+  padding: 29px 29px 26px 26px;
 }
 
 .booking__info {
@@ -689,14 +689,13 @@ img {
   font-weight: normal;
   font-size: 10px;
   line-height: 14px;
-  font-weight: 400;
 }
 
 .booking__pricetag {
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 28.8px;
 }
 
 .booking__per-room {
@@ -738,7 +737,7 @@ img {
 
 .booking__heading {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 18px;
   line-height: 25px;
 }
@@ -761,6 +760,7 @@ img {
 .booking__button {
   width: 100%;
   min-height: 45px;
+  padding: 0;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -902,7 +902,11 @@ img {
     margin-bottom: 0;
   }
   .booking {
-    padding: 25px;
+    padding: 29px 22px 26px 23px;
+    height: 210px;
+  }
+  .booking__pricetag {
+    line-height: 30px;
   }
 }
 
@@ -1068,8 +1072,11 @@ img {
   .booking {
     width: 279px;
     height: 210px;
-    padding: 25px;
+    padding: 29px 22px 26px 22px;
     margin-bottom: 20px;
+  }
+  .booking__button {
+    width: 235px;
   }
   .slider {
     width: 100%;
