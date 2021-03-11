@@ -639,7 +639,7 @@ img {
 
 .slider-button {
   position: absolute;
-  top: 50%;
+  top: 50.7%;
   transform: translateY(-50%);
   z-index: 99;
   width: 30px;
@@ -655,12 +655,12 @@ img {
 }
 
 .slider-button--next {
-  right: 16px;
+  right: 17px;
   background-image: url(../img/arrow-next.svg);
 }
 
 .slider-button--prev {
-  left: 16px;
+  left: 17px;
   background-image: url(../img/arrow-prev.svg);
 }
 
@@ -1083,14 +1083,16 @@ img {
     margin-bottom: 20px;
   }
   .slider-button {
-    width: 11.47px;
+    width: 3px;
+    top: 50.5%;
+    background-size: 5px;
   }
   .slider-button--next {
-    right: 12px;
+    right: 10px;
     background-image: url(../img/next-small.svg);
   }
   .slider-button--prev {
-    left: 12px;
+    left: 10px;
     background-image: url(../img/prev-small.svg);
   }
   .map {
