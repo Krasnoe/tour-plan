@@ -1,4 +1,4 @@
-const swiper = new Swiper('.hotel-slider', {
+const hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
 
@@ -12,13 +12,6 @@ const swiper = new Swiper('.hotel-slider', {
     enabled: true,
     onlyInViewport: false,
   },
-
-});
-
-
-document.addEventListener('keyup', function(event){
-    console.log('Key: 37', event.key);
-    console.log('keyCode: ', event.keyCode);
 });
 
 type="text/javascript">
@@ -29,3 +22,19 @@ type="text/javascript">
       zoom: 7
   });
 }
+
+const reviewsSlider = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
+  },
+  
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
