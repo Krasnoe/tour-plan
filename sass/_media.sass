@@ -220,6 +220,11 @@
   .map
     width: 100%
   .newsletter
+    padding: 76px 0 83px 0
+    &-title
+      margin-bottom: 37px
+    &__subscribe
+      margin-top: 0
     &-wrapper
       flex-direction: column
       max-width: 576px
@@ -250,6 +255,15 @@
       &__button
         top: 38.2%
         margin: 0
+@media (max-width: 700px)
+  .reviews
+    &-slider
+      &__button
+        top: 45px
+        &--prev
+          margin-left: 15vw
+        &--next
+          margin-right: 15vw
 @media (max-width: 576px)
   .navbar
     width: 100%
@@ -261,6 +275,10 @@
     &-grid
       width: 100%
       margin-right: 0
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 25px
 @media (max-width: 320px)
   .navbar
     &__container
@@ -374,13 +392,12 @@
       &__item
         padding: 0
         margin: 45px 0 0 0
-        height: 402px
+        height: 438px
       &__text
         padding: 0
         width: 219px
         margin-left: 33px
         margin-right: 29px
-
       &__button
         top: 45px
         &--prev
