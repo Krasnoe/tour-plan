@@ -874,9 +874,16 @@ img {
   .hotel-slider {
     width: 590px;
   }
-  .hotel-slider__image {
-    height: 100%;
+  .hotel-slider__item {
+    height: 450px;
+  }
+  .swiper-container {
+    height: 450px;
     width: 100%;
+  }
+  .swiper-slide__image {
+    height: 450px;
+    max-width: 100%;
     object-fit: cover;
   }
 }
@@ -913,10 +920,14 @@ img {
   }
   .hotel-slider {
     margin-bottom: 30px;
+    margin-right: 0;
     width: 100%;
   }
   .hotel-right {
     flex-direction: row;
+  }
+  .swiper-slide__image {
+    width: 100%;
   }
   .booking {
     width: 340px;
