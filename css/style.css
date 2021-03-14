@@ -1154,16 +1154,21 @@ img {
     line-height: 30px;
   }
   .newsletter {
-    padding: 98px 0 93px 0;
+    padding: 98px 0 99px 0;
   }
   .newsletter-title {
     height: 69px;
+    margin-top: -5px;
+  }
+  .newsletter-title__weak {
+    margin: 0;
   }
   .newsletter-title__strong {
     line-height: 36px;
+    margin-top: 5px;
   }
   .newsletter__subscribe {
-    margin-top: -4px;
+    margin-top: -2px;
   }
   .reviews {
     height: 532px;
@@ -1457,6 +1462,7 @@ img {
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 37px;
+    margin-top: 0;
   }
   .newsletter-title__strong {
     font-weight: 600;
@@ -1493,13 +1499,16 @@ img {
     font-size: 18px;
     line-height: 23px;
   }
+  .reviews-slider {
+    height: auto;
+  }
   .reviews-slider__item {
     padding: 0;
     margin: 45px 0 0 0;
-    height: 438px;
+    height: 100%;
   }
   .reviews-slider__text {
-    padding: 0;
+    padding: 0 0 36px 0;
     width: 219px;
     margin-left: 33px;
     margin-right: 29px;
