@@ -282,20 +282,14 @@
         padding: 0 10px 0 10px
         width: 100%
       &__button
-        top: 38.2%
-        margin: 0
-  .card
-    width: 48%
-    height: 255px
-@media (max-width: 700px)
-  .reviews
-    &-slider
-      &__button
         top: 45px
         &--prev
           margin-left: 15vw
         &--next
           margin-right: 15vw
+  .card
+    width: 48%
+    height: 255px
 @media (max-width: 576px)
   .navbar
     width: 100%
@@ -455,9 +449,14 @@
       line-height: 23px
       margin-bottom: 36px
     &__card
-      &:nth-child(2)
+      &:nth-child(3)
+        order: 1
         margin-bottom: 28px
-
+      &:nth-child(4)
+        order: 2
+      &:nth-child(2)
+        order: 2
+// по другому 2-й кадр не вставал на место 3-го кадра
   .card
     width: 280px
     height: 255px

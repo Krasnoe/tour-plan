@@ -356,6 +356,12 @@ img {
   max-width: 100%;
 }
 
+a,
+button,
+input {
+  outline: none;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1454,17 +1460,6 @@ img {
     width: 100%;
   }
   .reviews-slider__button {
-    top: 38.2%;
-    margin: 0;
-  }
-  .card {
-    width: 48%;
-    height: 255px;
-  }
-}
-
-@media (max-width: 700px) {
-  .reviews-slider__button {
     top: 45px;
   }
   .reviews-slider__button--prev {
@@ -1472,6 +1467,10 @@ img {
   }
   .reviews-slider__button--next {
     margin-right: 15vw;
+  }
+  .card {
+    width: 48%;
+    height: 255px;
   }
 }
 
@@ -1674,12 +1673,15 @@ img {
     line-height: 23px;
     margin-bottom: 36px;
   }
-  .activities__card:nth-child(2) {
+  .activities__card:nth-child(3) {
+    order: 1;
     margin-bottom: 28px;
   }
-  .card {
-    width: 280px;
-    height: 255px;
+  .activities__card:nth-child(4) {
+    order: 2;
+  }
+  .activities__card:nth-child(2) {
+    order: 2;
   }
 }
 /*# sourceMappingURL=style.css.map */
