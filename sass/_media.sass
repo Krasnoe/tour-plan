@@ -19,6 +19,13 @@
     &-slider
       &__button
         top: 41%
+    &-container
+      height: 450px
+  .card
+    width: 230px
+    height: 230px
+    &__title
+      width: 180px
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -64,6 +71,16 @@
     &-slider
       &__button
         top: 41%
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 339px
+    height: 255px
+    &__title
+      width: 200px
 @media (max-width: 768px)
   .container
     max-width: 700px
@@ -135,9 +152,9 @@
   .reviews
     height: 532px
     margin: 0
-    padding: 0
+    padding: 40px 0 0 0
     &__title
-      margin-top: 40px
+      margin-top: 0
       margin-bottom: 50px
       font-style: normal
       font-weight: bold
@@ -159,6 +176,14 @@
         margin: 0
   .map
     height: 210px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 339px
+    height: 255px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -259,6 +284,9 @@
       &__button
         top: 38.2%
         margin: 0
+  .card
+    width: 48%
+    height: 255px
 @media (max-width: 700px)
   .reviews
     &-slider
@@ -283,6 +311,8 @@
     &__title
       font-size: 18px
       line-height: 25px
+  .card
+    width: 100%
 @media (max-width: 320px)
   .navbar
     &__container
@@ -383,12 +413,12 @@
     &__input
       padding-left: 20px
   .reviews
-    height: 100%
     margin: 0
     padding: 0
     &-container
       width: 280px
-      height: 600px
+      height: 571px
+      margin-bottom: 50px
     &__title
       margin: 40px 20px 42px 20px
       font-size: 18px
@@ -410,3 +440,24 @@
           margin-left: 34px
         &--next
           margin-right: 34px
+  .activities
+    padding: 40px 0 60px 0
+    &__container
+      margin: 0 20px 0 20px
+      width: 280px
+    &-wrapper
+      width: 280px
+      margin: 0
+    &__title
+      width: 280px
+      margin-right: 0
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 36px
+    &__card
+      &:nth-child(2)
+        margin-bottom: 28px
+
+  .card
+    width: 280px
+    height: 255px
