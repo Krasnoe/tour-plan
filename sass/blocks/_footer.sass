@@ -7,7 +7,7 @@
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
     grid-gap: 20px
-    grid-auto-rows: minmax(40px, min-content)
+    grid-auto-rows: min-content
     align-items: start
   &__logo
     width: 153px
@@ -46,6 +46,7 @@
     &-form
       grid-column: span 2
       margin-left: 4px
+      margin-bottom: 95px
   &__form
     display: flex
     align-items: center
@@ -82,7 +83,7 @@
     line-height: 160%
     color: $footer-text-color
     &--mb-2
-      margin-bottom: 17.5px
+      margin-bottom: 16.5px
       &:nth-child(2)
         margin-bottom: 22.5px
   &__icon
@@ -149,7 +150,7 @@
     align-items: center
     justify-content: space-between
     grid-column: 1/5
-    margin-top: 76px
+    margin-top: -19px
     &-link
       font-style: normal
       font-weight: normal
@@ -157,5 +158,8 @@
       line-height: 15px
       color: $light
       padding-right: 8px
+    &-icons
+      margin-top: -1.5px
   &__links
     margin-left: 413px
+    margin-top: 1.5px
