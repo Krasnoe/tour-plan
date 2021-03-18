@@ -176,6 +176,8 @@
   .booking
     padding: 29px 22px 26px 23px
     height: 210px
+    &__price
+      margin-top: -1.4px
     &__pricetag
       line-height: 30px
   .newsletter
@@ -215,6 +217,8 @@
       &__button
         top: 38.2%
         margin: 0
+      &__profile
+        margin-left: 5px
   .map
     height: 210px
   .activities
@@ -282,9 +286,42 @@
     max-width: 576px
     margin: auto
     width: 92%
+  body
+    padding-top: 78px
   .navbar
-    &__search, &-menu, &__user
+    &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__user, &__search
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      padding-top: 31px
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &_visible
+            display: block
   .menu
     &-button
       display: flex
@@ -302,6 +339,12 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .stars
     flex-basis: auto
   .hotel
@@ -473,6 +516,16 @@
       grid-row: 8
       grid-column: span 6
       margin: 0
+// MEDIA 530
+@media (max-width: 530px)
+  .footer
+    &__sponsors
+      flex-wrap: wrap
+// MEDIA 410
+@media (max-width: 409px)
+  .footer
+    &__button
+      order: 2
 // MEDIA 320
 @media (max-width: 320px)
   .navbar
@@ -500,6 +553,8 @@
     &__container
       margin-right: 20px
       margin-left: 20px
+    &-list
+      padding-top: 10.5px
   .hotel
     padding-top: 3px
     padding-bottom: 0
@@ -602,6 +657,9 @@
           margin-left: 34px
         &--next
           margin-right: 34px
+      &__profile
+        margin-left: -1px
+        margin-top: -43.5px
   .activities
     padding: 40px 0 60px 0
     &__container
@@ -630,7 +688,7 @@
     width: 280px
     height: 255px
   .footer
-    padding: 67px 20px 21px 21px
+    padding: 69px 20px 21px 21px
     &-container
       margin: 0
     &-wrapper
@@ -703,8 +761,6 @@
     &__info
       flex-basis: 100%
       margin-bottom: 15px
-    &__button
-      order: 2
     &__links
       min-width: 277px
       margin: 0 0 10.5px -2px
