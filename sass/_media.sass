@@ -302,6 +302,7 @@
           display: none
         &_visible
           display: flex
+          max-width: 80vw
     &__user
       flex-direction: column
       justify-content: center
@@ -315,6 +316,7 @@
       padding-top: 31px
       &--visible
         display: block
+        overflow: auto
     &-menu
       flex-direction: column
       &__item
@@ -549,6 +551,33 @@
   .menu
     &-button
       margin-top: 4px
+  .navbar
+    &-menu
+      &__item
+        margin-bottom: 17px
+        &:nth-child(3)
+          margin-top: 14px
+          margin-bottom: 2.5px
+        &:nth-child(4)
+          margin-top: 14px
+        &--mobile
+          &_visible
+            margin-top: -24px
+            margin-bottom: 22px
+    &-bottom
+      &--visible
+        top: 72px
+    &__search
+      &--mobile
+        &_visible
+          width: 245px
+          margin: auto
+  .user
+    &-bottom
+      top: 71px
+    &__name
+      &--light
+        margin-bottom: 30px
   .breadcrumb
     &__container
       margin-right: 20px
