@@ -27,7 +27,7 @@
           </a>
           <form
             action="#"
-            class="search navbar__search navbar__search--mobile_hidden"
+            class="search navbar__search navbar__search--mobile--hidden"
           >
             <input
               type="text"
@@ -43,7 +43,7 @@
             </button>
           </form>
           <!-- /.search -->
-          <a href="#" class="user navbar__user navbar__user--mobile_hidden">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -64,10 +64,10 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
-            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <a
                 href="#"
-                class="user navbar__user navbar__user--mobile_visible"
+                class="user navbar__user navbar__user--mobile--visible"
               >
                 <img
                   src="img/user-avatar.jpg"
@@ -78,10 +78,10 @@
               </a>
               <!-- /.user -->
             </li>
-            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <form
                 action="#"
-                class="search navbar__search navbar__search--mobile_visible"
+                class="search navbar__search navbar__search--mobile--visible"
               >
                 <input
                   type="text"
@@ -675,17 +675,23 @@
           <!-- /.footer__contacts-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
-              <input class="input footer__input" placeholder="Phone Number*" />
+              <input
+                class="input footer__input"
+                placeholder="Phone Number*"
+                name="phone"
+              />
               <textarea
                 class="footer__message"
                 cols="30"
                 rows="10"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>

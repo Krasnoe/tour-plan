@@ -298,9 +298,9 @@
         z-index: 99
     &__user, &__search
       &--mobile
-        &_hidden
+        &--hidden
           display: none
-        &_visible
+        &--visible
           display: flex
           max-width: 80vw
     &__user
@@ -322,7 +322,7 @@
       &__item
         margin-bottom: 20px
         &--mobile
-          &_visible
+          &--visible
             display: block
   .menu
     &-button
@@ -454,7 +454,7 @@
       &-form
         width: auto
         grid-row: 5
-        grid-column: 1/6
+        grid-column: span 6
     &__form
       width: 100%
 // MEDIA 576
@@ -513,7 +513,6 @@
         grid-column: span 6
       &-form
         grid-row: 7
-        grid-column: span 5
     &__sponsors
       grid-row: 8
       grid-column: span 6
@@ -561,7 +560,7 @@
         &:nth-child(4)
           margin-top: 14px
         &--mobile
-          &_visible
+          &--visible
             margin-top: -24px
             margin-bottom: 22px
     &-bottom
@@ -569,7 +568,7 @@
         top: 72px
     &__search
       &--mobile
-        &_visible
+        &--visible
           width: 245px
           margin: auto
   .user
