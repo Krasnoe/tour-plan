@@ -1,4 +1,5 @@
 <?php
+include 'password.php'
 // Файлы phpmailer
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
@@ -31,7 +32,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'thekrasnoe@yandex.ru'; // Логин на почте
-    $mail->Password   = '777nebo777'; // Пароль на почте
+    $mail->Password   = $password; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('thekrasnoe@yandex.ru', 'thekrasnoe'); // Адрес самой почты и имя отправителя
