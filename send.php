@@ -1,5 +1,5 @@
 <?php
-include 'password.php'
+include ('password.php');
 // Файлы phpmailer
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
