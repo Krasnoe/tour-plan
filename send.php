@@ -1,5 +1,5 @@
 <?php
-include ('password.php');
+include 'phpmailer/password.php';
 // Файлы phpmailer
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
@@ -9,7 +9,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-
+$subscribe = $_POST['subscribe'];
 
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
@@ -17,7 +17,8 @@ $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<b>Сообщение:</b><br>$message<br>
+<b>Почта:</b> $subscribe
 ";
 
 // Настройки PHPMailer
@@ -38,7 +39,7 @@ try {
     $mail->setFrom('thekrasnoe@yandex.ru', 'thekrasnoe'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('psp.tema@mail.ru');  
+    $mail->addAddress('thekrasnoe@yandex.ru');  
 
     // Отправка сообщения
     $mail->isHTML(true);
@@ -55,4 +56,5 @@ else {$result = "error";}
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('Location: thankyou.html');
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
