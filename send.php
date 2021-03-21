@@ -12,14 +12,30 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
-$body = "
+
+if(isset($_POST['email'])){
+    // если есть что-то в $_POST['email']
+    $title = "Новое обращение Best Tour Plan";
+    $body = "<b>Почта для подписки:</b> $email";
+} 
+else {
+    // если нет, отправлена форма с телефоном и пр.
+    $title = "Новое обращение Best Tour Plan";
+    $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message<br>
-<b>Почта:</b> $email
 ";
+}
+
+// $title = "Новое обращение Best Tour Plan";
+// $body = "
+// <h2>Новое обращение</h2>
+// <b>Имя:</b> $name<br>
+// <b>Телефон:</b> $phone<br><br>
+// <b>Сообщение:</b><br>$message<br>
+// ";
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -39,7 +55,7 @@ try {
     $mail->setFrom('thekrasnoe@yandex.ru', 'thekrasnoe'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('thekrasnoe@yandex.ru');  
+    $mail->addAddress('thekrasnoe@yandex.ru');
 
     // Отправка сообщения
     $mail->isHTML(true);
@@ -57,4 +73,4 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
-// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+?>

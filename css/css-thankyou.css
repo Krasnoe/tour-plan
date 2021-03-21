@@ -1,0 +1,13 @@
+@media (max-width: 320px) {
+  .thankyou-container {
+    width: 100%;
+    margin: auto;
+  }
+  .thankyou__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .thankyou__button {
+    margin-bottom: 10px;
+  }
+}
