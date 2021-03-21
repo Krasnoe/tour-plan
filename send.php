@@ -9,7 +9,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-$subscribe = $_POST['subscribe'];
+$email = $_POST['email'];
 
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
@@ -18,7 +18,7 @@ $body = "
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message<br>
-<b>Почта:</b> $subscribe
+<b>Почта:</b> $email
 ";
 
 // Настройки PHPMailer

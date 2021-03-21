@@ -260,7 +260,7 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
             <div class="map" id="map"></div>
@@ -288,7 +288,7 @@
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
-            name="subscribe"
+            name="email"
           />
           <button class="subscribe__button">Send</button>
         </form>
@@ -694,7 +694,7 @@
               <textarea
                 class="message footer__message"
                 cols="30"
-                rows="10"
+                rows="3"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -740,10 +740,15 @@
             placeholder="Phone Number*"
             name="phone"
           />
+          <input
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+          />
           <textarea
             class="message modal__message"
             cols="30"
-            rows="10"
+            rows="3"
             placeholder="Message"
             name="message"
           ></textarea>
@@ -755,6 +760,7 @@
     </div>
     <!-- /.modal -->
     <!-- /.footer -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>

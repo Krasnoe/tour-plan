@@ -1346,6 +1346,14 @@ input {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__dialog {
@@ -1359,6 +1367,14 @@ input {
   transform: translate(-50%, -50%);
   border-radius: 8px;
   z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__close {
@@ -1397,7 +1413,13 @@ input {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
-  margin-left: 41px;
+}
+
+.modal__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1200px) {
