@@ -1437,10 +1437,24 @@ input {
   text-transform: uppercase;
 }
 
-.thankyou__button {
+.thankyou__form {
   margin-bottom: 15px;
+}
+
+.thankyou__button {
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (max-width: 320px) {
+  .thankyou-container {
+    width: 100%;
+    margin: auto;
+  }
+  .thankyou__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2444,6 +2458,14 @@ input {
   }
   .footer__sponsors-icons {
     margin-left: -2.5px;
+  }
+  .thankyou-container {
+    width: 100%;
+    margin: auto;
+  }
+  .thankyou__name {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
