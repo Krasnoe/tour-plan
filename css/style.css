@@ -2165,7 +2165,8 @@ input {
     margin-bottom: 22px;
   }
   .navbar-bottom--visible {
-    top: 72px;
+    top: 70px;
+    padding-top: 33.5px;
   }
   .navbar__search--mobile--visible {
     width: 245px;

@@ -12,18 +12,26 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-if(isset($_POST['email'])){
-    // если есть что-то в $_POST['email']
+if (count($_POST) == 1) {
     $title = "Новое обращение Best Tour Plan";
     $body = "<b>Почта для подписки:</b> $email";
 } 
-else {
-    // если нет, отправлена форма с телефоном и пр.
+else if (count($_POST) == 3) {
     $title = "Новое обращение Best Tour Plan";
     $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
+<b>Телефон:</b> $phone<br>
+<b>Сообщение:</b><br>$message<br>
+";
+}
+else if (count($_POST) == 4) {
+    $title = "Новое обращение Best Tour Plan";
+    $body = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br>
+<b>Электронная почта:</b> $email<br>
 <b>Сообщение:</b><br>$message<br>
 ";
 }
