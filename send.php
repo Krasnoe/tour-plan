@@ -29,14 +29,6 @@ else {
 ";
 }
 
-// $title = "Новое обращение Best Tour Plan";
-// $body = "
-// <h2>Новое обращение</h2>
-// <b>Имя:</b> $name<br>
-// <b>Телефон:</b> $phone<br><br>
-// <b>Сообщение:</b><br>$message<br>
-// ";
-
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
