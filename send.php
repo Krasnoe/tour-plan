@@ -12,7 +12,6 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-
 if(isset($_POST['email'])){
     // если есть что-то в $_POST['email']
     $title = "Новое обращение Best Tour Plan";
