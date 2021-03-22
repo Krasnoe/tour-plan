@@ -63,7 +63,7 @@ menuButton.on("click", function () {
   }
   document.addEventListener('keydown', (event) => {
   if (event.code === 'Escape') {
-    closeModal();
+    closeModal(event);
   };
 });
 
