@@ -495,7 +495,7 @@
             <h3 class="card__title card__title-1">
               The curious corner of&nbsp;chamarel
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -505,7 +505,7 @@
               class="card__image"
             />
             <h3 class="card__title card__title-2">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card activities__card">
             <img
@@ -516,7 +516,7 @@
             <h3 class="card__title card__title-3">
               Tamarind falls hiking trip&nbsp;-&nbsp;full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <div class="card activities__card">
             <img
@@ -527,7 +527,7 @@
             <h3 class="card__title card__title-4">
               The blue marine discovery quest
             </h3>
-            <button class="card__button">Book Now</button>
+            <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
         </div>
         <!-- /.activities-wrapper -->
@@ -602,13 +602,13 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a href="facebook.com" class="footer__link"
                 ><img src="img/facebook.svg" alt="icon: facebook"
               /></a>
-              <a href="#" class="footer__link"
+              <a href="youtube.com" class="footer__link"
                 ><img src="img/youtube.svg" alt="icon: youtube"
               /></a>
-              <a href="#" class="footer__link"
+              <a href="instagram.com" class="footer__link"
                 ><img src="img/instgram.svg" alt="icon: instagram"
               /></a>
             </div>
@@ -658,10 +658,12 @@
                     alt="icon: contact phone call"
                   />
                 </div>
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__phones">
+                  Tel (business hours) : <a href="tel:2691500" class="footer__link">269 1500</a><br />
+                  Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38" class="footer__link">52-56-61-38</a> (08:00 am – 20:00
+                  pm) <br />
+                  Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="footer__link">52-56-61-38</a> (08:00 am – 14:00 pm)
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -671,7 +673,7 @@
                     alt="icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a href="mailto:cherly.lawson@example.com" class="footer__link">cherly.lawson@example.com</a>
               </li>
             </ul>
           </div>

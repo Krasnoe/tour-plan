@@ -14,11 +14,16 @@
       visibility: visible
       opacity: 1
   &__dialog
+    display: flex
+    justify-content: start
+    align-items: center
+    flex-direction: column
     position: fixed
-    top: 50%
+    top: 48.8%
     left: 50%
     max-width: 478px
-    padding: 33px 88px
+    max-height: 487px
+    padding: 33px 88px 33px 88px
     background-color: $dark
     color: $light
     transform: translate(-50%, -50%)
@@ -32,21 +37,23 @@
       opacity: 1
   &__close
     position: absolute
-    right: 18px
-    top: 17px
+    right: 8px
+    top: 7px
     text-decoration: none
     cursor: pointer
+    padding: 10px
   &__title
     font-style: normal
     font-weight: bold
     font-size: 18px
-    line-height: 23px
-    margin-bottom: 15px
+    line-height: 0
+    margin-bottom: 28px
+    margin-top: 11px
     text-transform: uppercase
     text-align: center
   &__input
     width: 100%
-    margin-bottom: 15px
+    margin-bottom: 17px
     padding: 18px 0 17px 23px
   &__message
     width: 100%
@@ -63,5 +70,6 @@
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
+    font-size: 12px
   &__button
     cursor: pointer
