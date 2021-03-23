@@ -1,4 +1,6 @@
 .modal
+  max-width: 478px
+  min-width: 478px
   &__overlay
     position: fixed
     top: 0
@@ -13,15 +15,19 @@
     &--visible
       visibility: visible
       opacity: 1
+  &__content
+    width: 100%
+    height: 100%
   &__dialog
     display: flex
     justify-content: start
     align-items: center
     flex-direction: column
     position: fixed
-    top: 48.8%
+    top: 50%
     left: 50.1%
     max-width: 478px
+    min-width: 478px
     max-height: 487px
     padding: 33px 88px 33px 88px
     background-color: $dark
@@ -47,7 +53,7 @@
     font-weight: bold
     font-size: 18px
     line-height: 0
-    margin-bottom: 28px
+    margin-bottom: 27px
     margin-top: 11px
     text-transform: uppercase
     text-align: center
@@ -76,3 +82,9 @@
     line-height: 15px
   &__button
     cursor: pointer
+    &-wrapper
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: row
+      width: 100%

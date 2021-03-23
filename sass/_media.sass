@@ -119,11 +119,8 @@
     &__links
       margin-left: 0
   .modal
-    &__dialog
-      max-width: 100%
-      height: -webkit-fill-available
-      padding: 25px 44px
-      overflow: auto
+    max-width: 478px
+    min-width: 478px
 // MEDIA 768
 @media (max-width: 768px)
   .container
@@ -452,8 +449,6 @@
       padding-left: 15px
     &__message
       padding-left: 15px
-    &__button
-      order: 2
     &__info
       margin-bottom: 10px
 // MEDIA 660
@@ -536,11 +531,25 @@
       grid-row: 8
       grid-column: span 6
       margin: 0
-// MEDIA 530
+  .modal
+    &__dialog
+      padding: 20px
+      min-width: 90%
+    &__content
+      overflow: auto
+/// MEDIA 530
 @media (max-width: 530px)
   .footer
     &__sponsors
       flex-wrap: wrap
+// MEDIA height 500
+@media (max-height: 500px)
+  .modal__dialog
+    overflow: auto
+    top: 0
+    bottom: 0
+    transform: translate(-50%, 0)
+    padding-top: 28px
 // MEDIA 410
 @media (max-width: 409px)
   .footer
@@ -551,6 +560,14 @@
       font-size: 20px
     &__discription
       font-size: 12px
+// MEDIA 370
+@media (max-width: 370px)
+  .modal
+    &__button
+      &-wrapper
+        justify-content: space-between
+        flex-direction: column-reverse
+        margin: auto
 // MEDIA 320
 @media (max-width: 320px)
   .navbar
@@ -842,13 +859,20 @@
       margin-bottom: 10px
       margin-top: 0
     &__dialog
-      background-attachments: fixed
-      background-size: cover
+      top: 45.5%
+      left: 50%
+      transform: translate(-50%, -50%)
       padding: 20px 10px 10px 10px
-      overflow: auto
+      height: min-content
     &__close
       right: 2px
       top: 1px
     &__title
       margin-top: 10px
       margin-bottom: 20px
+    &__button
+      order: 0
+      &-wrapper
+        justify-content: space-between
+        flex-direction: column-reverse
+        margin: auto
