@@ -393,26 +393,6 @@ input {
   transition: 0.3s;
 }
 
-.button:hover {
-  background-color: #ff0101;
-}
-
-a {
-  transition: 0.3s;
-}
-
-a:hover {
-  color: #ff0000;
-}
-
-button {
-  transition: 0.3s;
-}
-
-button:hover {
-  background-color: #ff0000;
-}
-
 label.form-1 {
   color: #EC1F46;
   font-size: 12px;
@@ -1596,6 +1576,24 @@ label.form-3 {
   }
   .footer__input {
     flex-basis: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .button:hover {
+    background-color: #ff0101;
+  }
+  a {
+    transition: 0.3s;
+  }
+  a:hover {
+    color: #ff0000;
+  }
+  button {
+    transition: 0.3s;
+  }
+  button:hover {
+    background-color: #ff0000;
   }
 }
 
