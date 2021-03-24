@@ -2515,9 +2515,10 @@ label.form-3 {
   }
   .footer__logo {
     height: 110px;
-    min-width: 108px;
-    margin-left: -5.8px;
     margin-bottom: 42px;
+    min-width: 73.8px;
+    margin-left: -2.2px;
+    margin-top: 0;
   }
   .footer__social-network {
     display: block;
