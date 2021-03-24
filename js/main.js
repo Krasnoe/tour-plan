@@ -67,4 +67,47 @@ menuButton.on("click", function () {
   };
 });
 
+  // Обработка форм
+  $(".modal__form").validate({
+    errorClass: "form-1",
+    messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "The name must be at least 2 letters long",
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+    phone: {
+      required: "Phone number required",
+    },
+  }
+  });
+
+  $(".newsletter__subscribe").validate({
+    errorClass: "form-2",
+    messages: {
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+  }
+  });
+  
+  $(".footer__form").validate({
+    errorClass: "form-3",
+    messages: {
+    name: {
+      required: "Please specify your name",
+      minlength: "The name must be at least 2 letters long",
+    },
+    phone: {
+      required: "Phone number required",
+    },
+  }
+  });
+
+$(".phone").mask("+7(999)999-9999");
+
 });
