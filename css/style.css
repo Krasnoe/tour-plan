@@ -674,9 +674,17 @@ label.form-3 {
   background-image: url(../img/arrow-next.svg);
 }
 
+.hotel-slider__button--next:hover {
+  background-color: inherit;
+}
+
 .hotel-slider__button--prev {
   left: 17px;
   background-image: url(../img/arrow-prev.svg);
+}
+
+.hotel-slider__button--prev:hover {
+  background-color: inherit;
 }
 
 .stars {
@@ -1007,9 +1015,17 @@ label.form-3 {
   left: 0;
 }
 
+.reviews-slider__button--prev:hover {
+  background-color: inherit;
+}
+
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
   right: 0;
+}
+
+.reviews-slider__button--next:hover {
+  background-color: inherit;
 }
 
 .reviews-slider__profile {
