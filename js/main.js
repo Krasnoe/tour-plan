@@ -77,7 +77,7 @@ menuButton.on("click", function () {
     },
     email: {
       required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com"
+      email: "Еmail must be in the format of name@domain.com"
     },
     phone: {
       required: "Phone number required",
@@ -90,7 +90,7 @@ menuButton.on("click", function () {
     messages: {
     email: {
       required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com"
+      email: "Еmail must be in the format of name@domain.com"
     },
   }
   });
