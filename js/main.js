@@ -15,15 +15,6 @@ $(document).ready(function () {
   },
 });
 
-type="text/javascript">
-  ymaps.ready(init);
-  function init() {
-    var myMap = new ymaps.Map("map", {
-      center: [7.573638, 79.803867],
-      zoom: 7
-  });
-}
-
 const reviewsSlider = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
