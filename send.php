@@ -71,5 +71,6 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+// header('Location: thankyou.html');
 ?>
