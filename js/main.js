@@ -99,7 +99,9 @@ menuButton.on("click", function () {
   }
   });
 
-$(".phone").mask("+7(999)999-9999");
+// document.querySelector('#tel').oninput = e => e.target.value = e.target.value.replace(/\D/g, '');
+  
+$(".phone").mask("+7 (999) 999-9999");
 
   AOS.init();
 });
