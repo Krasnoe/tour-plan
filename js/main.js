@@ -67,7 +67,7 @@ menuButton.on("click", function () {
             minlength: "The name must be at least 2 letters long",
           },
           email: {
-              required: "We need your email address to contact you",
+              required: "We need your email to contact you",
               email: "Еmail must be in the format of name@domain.com"
             },
             phone: {
@@ -80,7 +80,7 @@ menuButton.on("click", function () {
                 errorClass: "form-2",
                 messages: {
                   email: {
-                      required: "We need your email address to contact you",
+                      required: "We need your email to contact you",
                       email: "Еmail must be in the format of name@domain.com"
                     },
                   }
